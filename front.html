@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin Panel</title>
+
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+
+
+<style>
+footer {
+    position: fixed;
+    height: 100px;
+    background-color:darkslategray;
+    margin-top: 100;
+    bottom: 0;
+    width: 100%;
+}</style>
+</head>
+<body>
+    <!--header-->
+    
+<div class = "jumbotron bg-dark mb-0" style="position:static; border-radius: 0%" >
+
+        <h2 class = "text-center" > AUTOMATED BLOGGING </h2>
+    
+    </div>
+    <!--side bar-->
+
+<nav class="sidebar d-none  d-md-block bg-dark sidebar-expand-sm bg-light sidebar-light sidebar pt-5  "
+style="width: 200px; height:650px; float: left;">
+       
+
+<div class="sidebar-category sidebar-default">
+        <div class="category-title">
+            
+        </div>
+            <div class="sidebar-sticky ">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="front.html">
+                            <svg   width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="feather feather-home ">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                            </svg>
+                           Post <span class="sr-only ">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="grph.html">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="feather feather-file">
+                                <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
+                                <polyline points="13 2 13 9 20 9"></polyline>
+                            </svg>
+                           Analatical Details
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="email.html">
+                            <svg  width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class=" feather feather-envelope">
+
+                                <circle cx="9" cy="21" r="1"></circle>
+                                <circle cx="20" cy="21" r="1"></circle>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                            </svg>
+                       Email
+                        </a>
+                    </li>
+                </ul>
+
+
+            </div>
+        </nav>
+        <div class="container">
+            <h1 class="docs-title" id="content">Article posts</h1>
+            <!-- <p class="docs-lead">Here You add your number of post ,keywords and click ok"</p> -->
+        
+            
+        
+                    <form>
+        
+                    <div class = "row justify-content-center align-items-center">
+        
+                        <div id = "articlenum" class = "col-md-12" style="padding:20px">
+                            <label for = "" class= "text-dark ">Number of Articles: </label><br>
+                            <input type="text" name="arnum" id="arnum" class="form-control" placeholder="Enter Article numbers" >
+                        </div>
+        
+        
+        
+        
+                    </div>
+        
+        
+                    <div class = "row">
+        
+                            <div class = "col-md-12" style="padding:20px">
+                                <label for = "keyw" class= "text-dark">Keywords, Separated by (,) :</label><br>
+                                <input type="text" name="keyw" id="keyw" class="form-control" placeholder="Enter Keywords" >
+                            </div>
+            
+            
+            
+            
+                    </div>
+        
+        
+                    <div class = row>
+        
+                            <div class = "col-md-12">
+            
+                                    <input type="button" name="search" class="btn btn-info btn-md" value="Search Articles">
+            
+                            </div>
+            
+                        </div>
+        
+                    </form>
+        
+        
+        </div>
+                        <!--footer-->
+
+                            
+                                  <footer class="footer">
+                                        <div class="container">
+                                          <span class="text-muted">Place sticky footer content here.</span>
+                                        </div>
+                                      </footer>
+
+
+                      
+                            
+    
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+                crossorigin="anonymous"></script>
+        </body>
+
+</html>
